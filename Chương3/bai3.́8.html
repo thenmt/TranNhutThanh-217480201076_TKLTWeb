@@ -1,0 +1,108 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <style>
+    body{
+      background:lime;
+      background-size: cover;
+    }
+    .menu {
+      background-color: blue;
+      text-align: center;
+    }
+    .menu ul{
+
+      display:inline-flex;
+      list-style: none;
+    }
+    .menu ul li{
+      width:200px;
+      margin:5px;
+      padding:5px;
+      font-size: 20px;
+    }
+    .menu ul li a{
+      color:black;
+      text-decoration: none;
+    }
+    .active,.menu ul li:hover{
+      background: red;
+      border-radius: 3px;
+    }
+    .menu2{
+      display:none;
+    }
+    .menu ul li:hover .menu2{
+      display:block;
+      position:absolute;
+      margin-top: 5px;
+      margin-left: -15px;
+    }
+    .menu ul li:hover .menu2 ul{
+      display:block;
+      margin:0px;
+      padding:0px;
+    }
+    .menu ul li:hover .menu2 ul li{
+     width:200px;
+     text-align: left;
+     border:botted 1px;
+     border-radius: 0px;
+     padding:15px;
+     margin:10px;
+    }
+    .menu ul li:hover .menu2 ul li:last-child{
+      border-bottom: none;
+    }
+    .menu ul li:hover .menu2 ul li a:hover{
+      color:yellow;
+    }
+    .right{
+      float:right;
+    }
+    .menu3{
+      display : none;
+    }
+    .menu2-hover:hover .menu3{
+      display:block;
+      position:absolute;
+      margin-top: -30px;
+      margin-left: 215px;
+      background:green;
+    }
+  </style>
+  <div class = "menu">
+  <ul>
+    <li><a href ="/">Trang chủ</a></li>
+    <li><a href ="/">Giới thiệu</a></li>
+    <li><a href ="/">Khóa học</a>
+      <div class = "menu2">
+        <ul>
+          <li class = "menu2-hover"><a href = "/">Tin học căn bản</a><i class ="right" aria-hidden="true"></i>
+            <div class = "menu3">
+              <ul>
+                <li><a href = "/">Microsoft Word 2010</a></li>
+                <li><a href = "/">Microsoft Excel 2010</a></li>
+                <li><a href = "/">Microsoft Power Point 2010</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href = "/">Tin học phổ thông</a></li>
+          <li><a href = "/">Lập trình Pacasl</a></li>
+          <li><a href = "/">Lập trình C</a></li>
+          <li><a href = "/">Thiết kế Website</a></li>
+          <li><a href = "/">Vẽ kỹ thuật AutoCAD</a></li>
+        </ul>
+      </div>  
+    </li>
+    <li><a href ="/">Bài viết</a></li>
+    <li><a href ="/">Thủ thuật</a></li>
+  </ul>
+</div>
+</body>
+</html>
+
